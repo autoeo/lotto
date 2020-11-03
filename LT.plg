@@ -1,0 +1,155 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LT - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/LT.res" /d "NDEBUG" "D:\00_PROJECT\99_ETC\LT\LT.rc"" 
+Creating temporary file "C:\Users\autoeo\AppData\Local\Temp\RSP61F6.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "./" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/LT.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\00_PROJECT\99_ETC\LT\DlgGetNumberList.cpp"
+"D:\00_PROJECT\99_ETC\LT\LT.cpp"
+"D:\00_PROJECT\99_ETC\LT\LTDlg.cpp"
+"D:\00_PROJECT\99_ETC\LT\CommonSrc\CmbRecentThNumber.cpp"
+"D:\00_PROJECT\99_ETC\LT\CommonSrc\ListCtrlNum.cpp"
+"D:\00_PROJECT\99_ETC\LT\CommonSrc\listctrlnumall.cpp"
+"D:\00_PROJECT\99_ETC\LT\CommonSrc\NumberFilter.cpp"
+"D:\00_PROJECT\99_ETC\LT\CommonSrc\NumberManager.cpp"
+"D:\00_PROJECT\99_ETC\LT\CommonSrc\XLAutomation.cpp"
+"D:\00_PROJECT\99_ETC\LT\CommonSrc\XLEzAutomation.cpp"
+]
+Creating command line "cl.exe @C:\Users\autoeo\AppData\Local\Temp\RSP61F6.tmp" 
+Creating temporary file "C:\Users\autoeo\AppData\Local\Temp\RSP61F7.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "./" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/LT.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\00_PROJECT\99_ETC\LT\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\autoeo\AppData\Local\Temp\RSP61F7.tmp" 
+Creating temporary file "C:\Users\autoeo\AppData\Local\Temp\RSP6208.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/LT.pdb" /machine:I386 /out:"bin/LT.exe" 
+.\Release\DlgGetNumberList.obj
+.\Release\LT.obj
+.\Release\LTDlg.obj
+.\Release\StdAfx.obj
+.\Release\CmbRecentThNumber.obj
+.\Release\ListCtrlNum.obj
+.\Release\listctrlnumall.obj
+.\Release\NumberFilter.obj
+.\Release\NumberManager.obj
+.\Release\XLAutomation.obj
+.\Release\XLEzAutomation.obj
+.\Release\LT.res
+]
+Creating command line "link.exe @C:\Users\autoeo\AppData\Local\Temp\RSP6208.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DlgGetNumberList.cpp
+LT.cpp
+LTDlg.cpp
+CmbRecentThNumber.cpp
+ListCtrlNum.cpp
+listctrlnumall.cpp
+NumberFilter.cpp
+NumberManager.cpp
+XLAutomation.cpp
+XLEzAutomation.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+LT.exe - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: LT - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Debug/LT.res" /d "_DEBUG" "D:\00_PROJECT\99_ETC\LT\LT.rc"" 
+Creating temporary file "C:\Users\autoeo\AppData\Local\Temp\RSP666E.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "./" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/LT.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\00_PROJECT\99_ETC\LT\DlgGetNumberList.cpp"
+"D:\00_PROJECT\99_ETC\LT\LT.cpp"
+"D:\00_PROJECT\99_ETC\LT\LTDlg.cpp"
+"D:\00_PROJECT\99_ETC\LT\CommonSrc\CmbRecentThNumber.cpp"
+"D:\00_PROJECT\99_ETC\LT\CommonSrc\ListCtrlNum.cpp"
+"D:\00_PROJECT\99_ETC\LT\CommonSrc\listctrlnumall.cpp"
+"D:\00_PROJECT\99_ETC\LT\CommonSrc\NumberFilter.cpp"
+"D:\00_PROJECT\99_ETC\LT\CommonSrc\NumberManager.cpp"
+"D:\00_PROJECT\99_ETC\LT\CommonSrc\XLAutomation.cpp"
+"D:\00_PROJECT\99_ETC\LT\CommonSrc\XLEzAutomation.cpp"
+]
+Creating command line "cl.exe @C:\Users\autoeo\AppData\Local\Temp\RSP666E.tmp" 
+Creating temporary file "C:\Users\autoeo\AppData\Local\Temp\RSP666F.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "./" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/LT.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\00_PROJECT\99_ETC\LT\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\autoeo\AppData\Local\Temp\RSP666F.tmp" 
+Creating temporary file "C:\Users\autoeo\AppData\Local\Temp\RSP667F.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/LT.pdb" /debug /machine:I386 /out:"binD/LT.exe" /pdbtype:sept 
+.\Debug\DlgGetNumberList.obj
+.\Debug\LT.obj
+.\Debug\LTDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\CmbRecentThNumber.obj
+.\Debug\ListCtrlNum.obj
+.\Debug\listctrlnumall.obj
+.\Debug\NumberFilter.obj
+.\Debug\NumberManager.obj
+.\Debug\XLAutomation.obj
+.\Debug\XLEzAutomation.obj
+.\Debug\LT.res
+]
+Creating command line "link.exe @C:\Users\autoeo\AppData\Local\Temp\RSP667F.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DlgGetNumberList.cpp
+LT.cpp
+LTDlg.cpp
+CmbRecentThNumber.cpp
+ListCtrlNum.cpp
+listctrlnumall.cpp
+NumberFilter.cpp
+NumberManager.cpp
+XLAutomation.cpp
+XLEzAutomation.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\Users\autoeo\AppData\Local\Temp\RSP6CD9.tmp" with contents
+[
+/nologo /o"Debug/LT.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\DlgGetNumberList.sbr
+.\Debug\LT.sbr
+.\Debug\LTDlg.sbr
+.\Debug\CmbRecentThNumber.sbr
+.\Debug\ListCtrlNum.sbr
+.\Debug\listctrlnumall.sbr
+.\Debug\NumberFilter.sbr
+.\Debug\NumberManager.sbr
+.\Debug\XLAutomation.sbr
+.\Debug\XLEzAutomation.sbr]
+Creating command line "bscmake.exe @C:\Users\autoeo\AppData\Local\Temp\RSP6CD9.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+LT.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

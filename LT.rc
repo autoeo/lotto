@@ -1,0 +1,380 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\LT.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\LT.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 77
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LT 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,21
+    LTEXT           "LT 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2018",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+    EDITTEXT        IDC_EDT_LABEL,7,51,221,13,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_LT_DIALOG DIALOGEX 0, 0, 541, 384
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "LT"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "List1",IDC_LIST_NUM_COUNT,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,8,116,178,226
+    PUSHBUTTON      "최다 출현 수 정열",IDC_BTN_GET_MOST_USED,16,59,81,16
+    EDITTEXT        IDC_EDT_PARAM_01,105,80,22,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDT_PARAM_02,134,80,22,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDT_PARAM_03,163,80,22,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "최다 출현 포함 수",IDC_BTN_GET_INCLUDED,105,59,81,16
+    CONTROL         "List1",IDC_LIST_NUMBER,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,195,114,171,266
+    EDITTEXT        IDC_EDT_TOTAL_COUNT,202,22,70,24,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "생성 (필터 적용)",IDC_BTN_GET_ALL_NUMBER,195,59,171,23
+    CONTROL         "1. 3연속수 이상 출현 제외",IDC_CHK_FILTER_OPTION_1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,380,19,136,10
+    CONTROL         "2. 2연속 2회 이상 포함 출현 제외",
+                    IDC_CHK_FILTER_OPTION_2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,380,33,136,10
+    CONTROL         "3. 짝수만 2,3,4회 출현 포함",IDC_CHK_FILTER_OPTION_3,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,380,49,136,10
+    CONTROL         "4. 기 출현 숫자 조합 제외",IDC_CHK_FILTER_OPTION_4,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,380,63,136,10
+    PUSHBUTTON      "Load a Excel File ( From www.nanumlotto.co.kr )",
+                    IDC_BTN_CONVERT_EXCEL_TO_BIN,16,20,170,14
+    GROUPBOX        "기 출현 Excel 관련",IDC_STATIC,5,5,187,343
+    GROUPBOX        "전체 후보 개수",IDC_STC_LABEL_TOTAL_COUNT,195,4,171,49
+    PUSHBUTTON      "CSV \n파일 출력",IDC_BTN_SAVE_RESULT_TO_CSV,277,22,40,
+                    24,BS_MULTILINE
+    GROUPBOX        "필터 옵션",IDC_STATIC,372,3,165,377
+    CONTROL         "5. 변호 조합의 합이",IDC_CHK_FILTER_OPTION_5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,380,79,73,10
+    CONTROL         "6. 변호 조합의 합이",IDC_CHK_FILTER_OPTION_6,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,380,97,73,10
+    EDITTEXT        IDC_EDT_LESS_NUM,454,78,15,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "이하 제외",IDC_STATIC,474,79,44,10
+    EDITTEXT        IDC_EDT_OVER_NUM,454,95,15,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "이상 제외",IDC_STATIC,474,97,44,10
+    CONTROL         "7. 제외 번호 설정",IDC_CHK_FILTER_OPTION_7,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,380,113,70,10
+    CONTROL         "8. 필 포함 번호 최대 3개 설정",IDC_CHK_FILTER_OPTION_8,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,380,129,107,10
+    PUSHBUTTON      "설정",IDC_BTN_SET_EXCEPT_NUMBERS,454,111,50,13
+    EDITTEXT        IDC_EDT_INCLUDE_NUMBER_1,392,141,27,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDT_INCLUDE_NUMBER_2,424,141,27,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDT_INCLUDE_NUMBER_3,456,141,27,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDT_FILTER_INFO_FROM,3,354,188,27,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "9. 3의 배수가 1,2,3회 출현 포함 ",
+                    IDC_CHK_FILTER_OPTION_9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,380,159,135,10
+    CONTROL         "10. 5의 배수가 0,1,2회 출현 포함 ",
+                    IDC_CHK_FILTER_OPTION_10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,380,175,135,10
+    CONTROL         "11. 7의 배수가 0,1,2회 출현 포함 ",
+                    IDC_CHK_FILTER_OPTION_11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,380,191,135,10
+    LTEXT           "출현 가능 숫자 리스트  \n- 후보 개수가 3만 이하일때만 표시 너무 많음. ",
+                    IDC_STATIC,195,90,171,23
+    PUSHBUTTON      "조합의 합 기존 정열",IDC_BTN_SORT_BY_SUM,16,79,81,16,
+                    WS_DISABLED
+    CONTROL         "최근",IDC_CHK_RECENT_TH_NUMBER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,40,25,10
+    COMBOBOX        IDC_CMB_RECENT_TH_NUMBER,45,38,33,352,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_RIGHT
+    LTEXT           "회 까지 최다 출현수 반영",IDC_STC_MSG_RECENT_TH_NUMBER,
+                    83,40,79,8
+    PUSHBUTTON      "반대CSV \n파일 출력",IDC_BTN_SAVE_WITHOUT_RESULT_TO_CSV,
+                    319,22,40,24,BS_MULTILINE
+END
+
+IDD_DLG_GET_NUMBER_LIST DIALOG DISCARDABLE  0, 0, 259, 225
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "번호 목록 설정"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,145,206,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,197,206,50,14
+    CONTROL         "1",IDC_CHK_NUMBER_01,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,10,13,24,19
+    CONTROL         "2",IDC_CHK_NUMBER_02,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,36,13,24,19
+    CONTROL         "3",IDC_CHK_NUMBER_03,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,62,13,24,19
+    CONTROL         "4",IDC_CHK_NUMBER_04,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,88,13,24,19
+    CONTROL         "5",IDC_CHK_NUMBER_05,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,114,13,24,19
+    CONTROL         "6",IDC_CHK_NUMBER_06,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,140,13,24,19
+    CONTROL         "7",IDC_CHK_NUMBER_07,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,166,13,24,19
+    CONTROL         "8",IDC_CHK_NUMBER_08,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,10,35,24,19
+    CONTROL         "9",IDC_CHK_NUMBER_09,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,36,35,24,19
+    CONTROL         "10",IDC_CHK_NUMBER_10,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,62,35,24,19
+    CONTROL         "11",IDC_CHK_NUMBER_11,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,88,35,24,19
+    CONTROL         "12",IDC_CHK_NUMBER_12,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,114,35,24,19
+    CONTROL         "13",IDC_CHK_NUMBER_13,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,140,35,24,19
+    CONTROL         "14",IDC_CHK_NUMBER_14,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,166,35,24,19
+    CONTROL         "15",IDC_CHK_NUMBER_15,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,10,57,24,19
+    CONTROL         "16",IDC_CHK_NUMBER_16,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,36,57,24,19
+    CONTROL         "17",IDC_CHK_NUMBER_17,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,62,57,24,19
+    CONTROL         "18",IDC_CHK_NUMBER_18,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,88,57,24,19
+    CONTROL         "19",IDC_CHK_NUMBER_19,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,114,57,24,19
+    CONTROL         "20",IDC_CHK_NUMBER_20,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,140,57,24,19
+    CONTROL         "21",IDC_CHK_NUMBER_21,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,166,57,24,19
+    CONTROL         "22",IDC_CHK_NUMBER_22,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,10,79,24,19
+    CONTROL         "23",IDC_CHK_NUMBER_23,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,36,79,24,19
+    CONTROL         "24",IDC_CHK_NUMBER_24,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,62,79,24,19
+    CONTROL         "25",IDC_CHK_NUMBER_25,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,88,79,24,19
+    CONTROL         "26",IDC_CHK_NUMBER_26,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,114,79,24,19
+    CONTROL         "27",IDC_CHK_NUMBER_27,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,140,79,24,19
+    CONTROL         "28",IDC_CHK_NUMBER_28,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,166,79,24,19
+    CONTROL         "29",IDC_CHK_NUMBER_29,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,10,101,24,19
+    CONTROL         "30",IDC_CHK_NUMBER_30,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,36,101,24,19
+    CONTROL         "31",IDC_CHK_NUMBER_31,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,62,101,24,19
+    CONTROL         "32",IDC_CHK_NUMBER_32,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,88,101,24,19
+    CONTROL         "33",IDC_CHK_NUMBER_33,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,114,101,24,19
+    CONTROL         "34",IDC_CHK_NUMBER_34,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,140,101,24,19
+    CONTROL         "35",IDC_CHK_NUMBER_35,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,166,101,24,19
+    CONTROL         "36",IDC_CHK_NUMBER_36,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,10,123,24,19
+    CONTROL         "37",IDC_CHK_NUMBER_37,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,36,123,24,19
+    CONTROL         "38",IDC_CHK_NUMBER_38,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,62,123,24,19
+    CONTROL         "39",IDC_CHK_NUMBER_39,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,88,123,24,19
+    CONTROL         "40",IDC_CHK_NUMBER_40,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,114,123,24,19
+    CONTROL         "41",IDC_CHK_NUMBER_41,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,140,123,24,19
+    CONTROL         "42",IDC_CHK_NUMBER_42,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,166,123,24,19
+    CONTROL         "43",IDC_CHK_NUMBER_43,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,10,145,24,19
+    CONTROL         "44",IDC_CHK_NUMBER_44,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,36,145,24,19
+    CONTROL         "45",IDC_CHK_NUMBER_45,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,62,145,24,19
+    GROUPBOX        "",IDC_STATIC,3,5,192,194
+    PUSHBUTTON      "3의 배수 선택",IDC_BTN_SELECT_MULTI_OF_3,199,94,56,11
+    PUSHBUTTON      "3의 배수 해재",IDC_BTN_DESELECT_MULTI_OF_3,199,108,56,
+                    11
+    PUSHBUTTON      "5의 배수 선택",IDC_BTN_SELECT_MULTI_OF_5,199,123,56,11
+    PUSHBUTTON      "5의 배수 해재",IDC_BTN_DESELECT_MULTI_OF_5,199,137,56,
+                    11
+    PUSHBUTTON      "홀수 선택",IDC_BTN_SELECT_ODD_NUMBER,199,36,56,11
+    PUSHBUTTON      "홀수 해재",IDC_BTN_DESELECT_ODD_NUMBER,199,50,56,11
+    PUSHBUTTON      "짝수 선택",IDC_BTN_SELECT_EVEN_NUMBER,199,65,56,11
+    PUSHBUTTON      "짝수 해재",IDC_BTN_DESELECT_EVEN_NUMBER,199,79,56,11
+    PUSHBUTTON      "모두 선택",IDC_BTN_SELECT_ALL,199,7,56,11
+    PUSHBUTTON      "모두 해재",IDC_BTN_DESELECT_ALL,199,21,56,11
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2020,11,2,1
+ PRODUCTVERSION 2020,11,2,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "LT MFC 응용 프로그램\0"
+            VALUE "FileVersion", "2020, 11, 2, 1\0"
+            VALUE "InternalName", "LT\0"
+            VALUE "LegalCopyright", "Copyright (C) 2018\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "LT.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "LT 응용 프로그램\0"
+            VALUE "ProductVersion", "2020, 11, 2, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "LT 정보(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\LT.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
